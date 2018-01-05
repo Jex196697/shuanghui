@@ -3,7 +3,6 @@ body{
 	color: #333;
 	background-color: #f7f7f7;
 	font-family: "微软雅黑";
-	
 }
 @font-face {
     font-family: 'PingFang_Regular';
@@ -24,6 +23,9 @@ ul{
 li{
 	list-style: none;
 }
+p{
+	margin: 0;
+}
 
 /*清除浮动代码*/
 .clearfloat:after{display:block;clear:both;content:"";visibility:hidden;height:0}
@@ -40,91 +42,51 @@ li{
 }
 .bg{
 /*	background: #fff;*/
-	margin-top: 0.2rem;
-	padding-bottom: 0.2rem;
+/*	margin-top: 0.2rem;
+	padding-bottom: 0.2rem;*/
 }
-#bg1{
-	margin:0;
-}
-.Top{
-	width: 7.5rem;
-	height: 1.28rem;
-	background:url(icon/top.jpg);
-	background-size: 100%;
-	position: fixed;
-	top: 0;
-}
+
 .banner{
-	/*margin-top: 1.28rem;*/
-	width: 7.5rem;
-	height: 3.3rem;
-	background-image:url(img/01.jpg);
-	background-size: 100% 100%;
-	background-position: center;
-	background-repeat: no-repeat;
+	width: 100%;
 }
-.coupon{
-	height:1.8rem;
-	background-image:url(img/coupon.jpg);
-	background-image:url(img/coupon.gif);
-	background-size: 100% 100%;
-	background-position: center; 
-	background-repeat: no-repeat;
+.banner img{
+	display: block;
+	width: inherit;
+	height: 100%;
 }
+
+/*地址选择*/
 .M_nearby{
 	height:1.1rem;
-	margin: 0 0.32rem;
-	background: url(icon/jin.png) no-repeat;
-	background-size: 0.1rem 0.16rem;
-	background-position: right 0.47rem;
+	padding: 0 0.24rem;
 	background-color: #fff;
 }
-.M_nearby2{
-	height:1.1rem;
-	margin: 0 0.32rem;
-	background: url(icon/jin2.png) no-repeat;
-	background-size: 0.1rem 0.16rem;
-	background-position: right 0.47rem;
-	background-color: #fff;
-}
-.M_nearby span{
+.M_nearby .location{
 	float: left;
-	margin: 0.4rem 0;
-	width: 0.08rem;
-	height: 0.3rem;
-	background:-webkit-gradient(linear, 0% 0%, 0% 100%, from(rgba(255,85,63,1)), to(rgba(245,58,71,1)));
-}
-.M_nearby .title{
-	float: left;
-	height: 1.1rem;
-	line-height: 1.1rem;
-	margin-left: 0.12rem;
-	font-size: 0.3rem;
-	font-weight: bold;
-	font-family: "PingFang_Bold";
-}
-.M_nearby .location,.M_nearby .time,.M_nearby .time2{
-	float: right;
 	height: 1.1rem;
 	line-height: 1.1rem;
 	font-size: 0.28rem;
 	color: #f84145;
 	padding-left: 0.29rem;
-	margin-right: 0.24rem;
 	font-family: "PingFang_Bold";
-}
-.M_nearby .location,.M_nearby .time{
 	color: #f84145;
-}
-.M_nearby .time2{
-	color: #b8c2cc;
-}
-.M_nearby .location{
-	background: url(icon/loc.png) no-repeat ;
+	background: url(../icon/loc.png) no-repeat ;
 	background-size: 0.21rem 0.26rem;
 	background-position: 0 0.42rem;
 }
-.M_nearby .location p{
+.M_nearby .location2{
+	float: right;
+	height: 1.1rem;
+	line-height: 1.1rem;
+	font-size: 0.28rem;
+	padding-right: 0.24rem;
+	font-family: "PingFang_Bold";
+	color: #b8c2cc;
+	background: url(../icon/jin2.png) no-repeat;
+	background-size: 0.1rem 0.16rem;
+	background-position: right 0.47rem;
+}
+.M_nearby .location p,.M_nearby .location2 p{
 	max-width:4rem;
 	margin: 0;
 	overflow: hidden;
@@ -132,67 +94,120 @@ li{
 	text-overflow: ellipsis;
 
 }
-.nearby{
-	float: left;
-	width: 6.72rem;
-	margin:0 0.32rem 0.2rem 0.32rem;
-	padding: 1.2rem 0.07rem 0.07rem 0.07rem;
-	background: url(img/bk-img02.jpg) no-repeat;
-	background-size: 100% auto;
-	background-color: #e13339;
+
+/*优惠券*/
+.coupon{
+	height:1.8rem;
+	background-image:url(../img/coupon1.gif);
+	background-size: 100% 100%;
+	background-position: center; 
+	background-repeat: no-repeat;
 }
-.nearby ul{
-	float: left;
-	width: 6.72rem;
+
+/*汇编*/
+.compile{
+
 }
-.nearby li{
-	float: left;
-	width:2.12rem;
-	height:2.84rem;
-	margin:0.06rem;
-	background: #ffffff;
-  	box-shadow: 0px 4px 16px 0px rgba(117, 32, 32, 0.1);
+.compile p{
+	width: 100%;
+	color: #333;
+	font-size: 0.28rem;
+	font-weight: 600;
 }
-.nearby .product{
-	width: 1.9rem;
-	height: 1.9rem;
-	margin:0.11rem;
+.compile span{
+	font-size: 0.20rem;
+	color: #999;
+	display: block;
 }
-.nearby .product i{
+.miaosha{
 	float: left;
-	width: 0.4rem;
-	height: 0.49rem;
-	position: absolute;
+	width: 73%;
 }
-.nearby .product img{
+.miaosha_content{
+	padding: 0.24rem 0 0 0.24rem;
+	width: 5.17rem;
+	background: #fff;
+}
+.miaosha_content ul{
+	padding-bottom: 0.2rem;
+}
+.miaosha_content li{
 	float: left;
+	width: 1.51rem;
+	height: 1.51rem;
+	margin-top: 0.24rem;
+	margin-right: 0.2rem;
+}
+.miaosha_content li img{
 	width: inherit;
 	height: inherit;
 }
-.nearby .product_text{
-	margin: 0 0.1rem;
-	width: 2.1rem;
-	text-align: center;
-	font-size: 0.22rem;
-	line-height: 0.22rem;
-	overflow: hidden;
-	white-space:nowrap;
-	text-overflow: ellipsis;
+.xiaoliang{
+	float: right;
+	width: 27%;
 }
-.nearby li span{
+.xiaoliang_content{
+	float: right;
+	padding: 0.24rem 0 0 0.24rem;
+	width: 1.75rem;
+	background: #fff;
+}
+.xiaoliang_content div{
 	float: left;
-	width: 2.12rem;
-	height: 0.21rem;
-	margin-top: 0.06rem;
-	margin-bottom: 0.15rem;
-	background: url(icon/hotxiao.png) no-repeat;
-	background-size: 0.62rem 0.21rem;
-	background-position: center;
+	width: 1.51rem;
+	height: 1.51rem;
+	margin-top: 0.24rem;
+	margin-right: 0.2rem;
+	padding-bottom: 0.2rem;
 }
+.xiaoliang_content div img{
+	width: inherit;
+	height: inherit;
+}
+.fenlei1,.fenlei2{
+	margin-top: 0.1rem;
+}
+.fenlei1{
+	float: left;
+	width: 50%;
+}
+.fenlei2{
+	float: right;
+	width: 50%;
+}
+#fenlei1,#fenlei2{
+	width: 3.46rem;
+}
+#fenlei2{
+	float: right;
+}
+/*门店店铺*/
 .box{
 	float: left;
 	background: #fff;
 	margin-top:0.2rem;
+}
+.shopbox{
+	font-size: .28rem;
+	font-weight: bold;
+	text-align: center;
+	line-height: 1.2rem;
+}
+.shopbox span{
+	color: #f53b47;
+}
+.shopbox:before,.shopbox:after{
+	content: "— — — — — — — ";
+	color: #999;
+    position: relative;
+    top: -1px;
+    font-weight: 600;
+}
+.shopbox:before{
+	right: 8px;
+}
+.shopbox:after{
+	left: 8px;
 }
 .shop{
 	float: left;
@@ -211,10 +226,12 @@ li{
 	width: 0.76rem;
 	height: 0.76rem;
 	border-radius: 10rem;
+	box-shadow: 0 0 0.04rem rgba(0,0,0,.2)
 }
 .shop_name{
 	font-size:0.28rem;
-	line-height: 0.44rem;
+	line-height: 0.38rem;
+	margin-bottom: 0.06rem;
 	font-family: "PingFang_Bold";
 	overflow: hidden;
 	white-space:nowrap;
@@ -227,7 +244,7 @@ li{
     margin-top: -1px;
     width: 0.24rem;
     height: 0.24rem;
-    background-image: url(icon/hot.png);
+    background-image: url(../icon/hot.png);
     background-repeat: no-repeat;
     background-position: 50%;
     background-size: 100%
@@ -284,7 +301,7 @@ li{
 	margin:0 0.1rem;
 	text-align: center;
 	font-size: 0.24rem;
-	line-height: 0.7rem;
+	line-height: 0.8rem;
 	overflow: hidden;
 	white-space:nowrap;
 	text-overflow: ellipsis;
@@ -305,43 +322,35 @@ li{
     display: inline-block;
     vertical-align: middle;
     margin-top: -2px;
-    width: 0.24rem;
-    height: 0.24rem;
-    background-image: url(icon/loc1.png);
+    width: 0.22rem;
+    height: 0.22rem;
+    background-image: url(../icon/loc1.png);
     background-repeat: no-repeat;
     background-position: 50%;
     background-size: .2rem .24rem
 }
 .shop_bottom{
 	padding-left: 0.24rem;
-	height: 0.8rem;
-	line-height: 0.8rem;
+	height: 0.7rem;
+	line-height: 0.7rem;
 	font-size: 0.24rem;
 	color: #47cdf1;
 	border-top: 1px solid #f7f7f7;
 }
-.box2 .shop_pro{
-	background: url(img/colorbg.jpg);
-	background-position: 0 0;
-	background-size: auto 100%; 
-}
-.box2 .shop_pro li{
-	margin-bottom: 0.2rem;
-	background: #fff;
-}
-.box2 .shop_pro li span{
-	padding-top: 0.09rem;
-	margin-bottom: 0.23rem;
-}
-.box2 .shop_pro li span i{
-	color: #b3b3b3;
-	font-style: normal;
-	text-decoration:line-through;
+.bottom_tishi{
+	width: 100%;
+	height: 1.2rem;
+	line-height: 1.2rem;
+	float: left;
+	color:#999;
+	font-size: .24rem;
+	text-align: center;
+	margin-bottom: 0.98rem;	
 }
 .Tab{
 	width: 7.5rem;
 	height: 0.98rem;
-	background:url(icon/TAB.jpg);
+	background:url(../icon/TAB.jpg);
 	background-size: 100%;
 	background-color: #fff;
 	position: fixed;
