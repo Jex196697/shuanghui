@@ -321,13 +321,13 @@ p{
 	content: "";
     display: inline-block;
     vertical-align: middle;
-    margin-top: -2px;
-    width: 0.20rem;
+    margin-top: -3px;
+    width: 0.18rem;
     height: 0.22rem;
     background-image: url(../icon/loc1.png);
     background-repeat: no-repeat;
     background-position: 50%;
-    background-size: .20rem .22rem
+    background-size: .18rem .22rem
 }
 .shop_bottom{
 	padding-left: 0.24rem;
