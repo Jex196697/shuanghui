@@ -323,11 +323,11 @@ p{
     vertical-align: middle;
     margin-top: -2px;
     width: 0.22rem;
-    height: 0.22rem;
+    height: 0.24rem;
     background-image: url(../icon/loc1.png);
     background-repeat: no-repeat;
     background-position: 50%;
-    background-size: .2rem .24rem
+    background-size: .22rem .24rem
 }
 .shop_bottom{
 	padding-left: 0.24rem;
