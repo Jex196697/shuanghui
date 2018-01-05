@@ -4,18 +4,7 @@ body{
 	background-color: #f7f7f7;
 	font-family: "微软雅黑";
 }
-@font-face {
-    font-family: 'PingFang_Regular';
-    src: url(fonts/PingFang_Regular.ttf);
-}
-@font-face {
-    font-family: 'PingFang_Medium';
-    src: url(fonts/PingFang_Medium.ttf);
-}
-@font-face {
-    font-family: 'PingFang_Bold';
-    src: url(fonts/PingFang_Bold.ttf);
-}
+
 ul{
 	margin: 0;
 	padding: 0;
@@ -67,15 +56,12 @@ p{
 	line-height: 1.1rem;
 	font-size: 0.28rem;
 	color: #f84145;
-	font-family: "PingFang_Bold";
-	color: #f84145;
 }
 .M_nearby .location2{
 	float: right;
 	height: 1.1rem;
 	line-height: 1.1rem;
 	font-size: 0.28rem;
-	font-family: "PingFang_Bold";
 	color: #b8c2cc;
 }
 .M_nearby .location p,.M_nearby .location2 p{
@@ -249,7 +235,6 @@ p{
 	font-size:0.28rem;
 	line-height: 0.38rem;
 	margin-bottom: 0.06rem;
-	font-family: "PingFang_Bold";
 	overflow: hidden;
 	white-space:nowrap;
 	text-overflow: ellipsis;
@@ -269,14 +254,12 @@ p{
 .shop_text{
 	font-size: 0.22rem;
 	line-height: 0.32rem;
-	font-family: "PingFang_Regular";
 	color: #999;
 	overflow: hidden;
 	white-space:nowrap;
 	text-overflow: ellipsis;
 }
 .shop_in{
-	font-family: "PingFang_Bold";
 	float: right;
 	width: 0.9rem;
 	height: 0.5rem;
@@ -292,7 +275,6 @@ p{
 	width: 7.26rem;
 	margin-left: 0.24rem;
 	overflow: scroll;
-	font-family: "PingFang_Medium";
 }
 .shop_pro{
 	float: left;
