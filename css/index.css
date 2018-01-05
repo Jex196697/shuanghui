@@ -1,0 +1,350 @@
+body{
+	margin: 0;
+	color: #333;
+	background-color: #f7f7f7;
+	font-family: "微软雅黑";
+	
+}
+@font-face {
+    font-family: 'PingFang_Regular';
+    src: url(fonts/PingFang_Regular.ttf);
+}
+@font-face {
+    font-family: 'PingFang_Medium';
+    src: url(fonts/PingFang_Medium.ttf);
+}
+@font-face {
+    font-family: 'PingFang_Bold';
+    src: url(fonts/PingFang_Bold.ttf);
+}
+ul{
+	margin: 0;
+	padding: 0;
+}
+li{
+	list-style: none;
+}
+
+/*清除浮动代码*/
+.clearfloat:after{display:block;clear:both;content:"";visibility:hidden;height:0}
+.clearfloat{zoom:1}
+/*滚动条设置*/
+::-webkit-scrollbar {
+    width: 0px;
+    height: 1px;
+}
+::-webkit-scrollbar-thumb {
+    border-radius: 5px;
+    -webkit-box-shadow: inset 0 0 5px rgba(0, 0, 0, 0);
+    background: rgba(0, 0, 0, 0);
+}
+.bg{
+/*	background: #fff;*/
+	margin-top: 0.2rem;
+	padding-bottom: 0.2rem;
+}
+#bg1{
+	margin:0;
+}
+.Top{
+	width: 7.5rem;
+	height: 1.28rem;
+	background:url(icon/top.jpg);
+	background-size: 100%;
+	position: fixed;
+	top: 0;
+}
+.banner{
+	/*margin-top: 1.28rem;*/
+	width: 7.5rem;
+	height: 3.3rem;
+	background-image:url(img/01.jpg);
+	background-size: 100% 100%;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+.coupon{
+	height:1.8rem;
+	background-image:url(img/coupon.jpg);
+	background-image:url(img/coupon.gif);
+	background-size: 100% 100%;
+	background-position: center; 
+	background-repeat: no-repeat;
+}
+.M_nearby{
+	height:1.1rem;
+	margin: 0 0.32rem;
+	background: url(icon/jin.png) no-repeat;
+	background-size: 0.1rem 0.16rem;
+	background-position: right 0.47rem;
+	background-color: #fff;
+}
+.M_nearby2{
+	height:1.1rem;
+	margin: 0 0.32rem;
+	background: url(icon/jin2.png) no-repeat;
+	background-size: 0.1rem 0.16rem;
+	background-position: right 0.47rem;
+	background-color: #fff;
+}
+.M_nearby span{
+	float: left;
+	margin: 0.4rem 0;
+	width: 0.08rem;
+	height: 0.3rem;
+	background:-webkit-gradient(linear, 0% 0%, 0% 100%, from(rgba(255,85,63,1)), to(rgba(245,58,71,1)));
+}
+.M_nearby .title{
+	float: left;
+	height: 1.1rem;
+	line-height: 1.1rem;
+	margin-left: 0.12rem;
+	font-size: 0.3rem;
+	font-weight: bold;
+	font-family: "PingFang_Bold";
+}
+.M_nearby .location,.M_nearby .time,.M_nearby .time2{
+	float: right;
+	height: 1.1rem;
+	line-height: 1.1rem;
+	font-size: 0.28rem;
+	color: #f84145;
+	padding-left: 0.29rem;
+	margin-right: 0.24rem;
+	font-family: "PingFang_Bold";
+}
+.M_nearby .location,.M_nearby .time{
+	color: #f84145;
+}
+.M_nearby .time2{
+	color: #b8c2cc;
+}
+.M_nearby .location{
+	background: url(icon/loc.png) no-repeat ;
+	background-size: 0.21rem 0.26rem;
+	background-position: 0 0.42rem;
+}
+.M_nearby .location p{
+	max-width:4rem;
+	margin: 0;
+	overflow: hidden;
+	white-space:nowrap;
+	text-overflow: ellipsis;
+
+}
+.nearby{
+	float: left;
+	width: 6.72rem;
+	margin:0 0.32rem 0.2rem 0.32rem;
+	padding: 1.2rem 0.07rem 0.07rem 0.07rem;
+	background: url(img/bk-img02.jpg) no-repeat;
+	background-size: 100% auto;
+	background-color: #e13339;
+}
+.nearby ul{
+	float: left;
+	width: 6.72rem;
+}
+.nearby li{
+	float: left;
+	width:2.12rem;
+	height:2.84rem;
+	margin:0.06rem;
+	background: #ffffff;
+  	box-shadow: 0px 4px 16px 0px rgba(117, 32, 32, 0.1);
+}
+.nearby .product{
+	width: 1.9rem;
+	height: 1.9rem;
+	margin:0.11rem;
+}
+.nearby .product i{
+	float: left;
+	width: 0.4rem;
+	height: 0.49rem;
+	position: absolute;
+}
+.nearby .product img{
+	float: left;
+	width: inherit;
+	height: inherit;
+}
+.nearby .product_text{
+	margin: 0 0.1rem;
+	width: 2.1rem;
+	text-align: center;
+	font-size: 0.22rem;
+	line-height: 0.22rem;
+	overflow: hidden;
+	white-space:nowrap;
+	text-overflow: ellipsis;
+}
+.nearby li span{
+	float: left;
+	width: 2.12rem;
+	height: 0.21rem;
+	margin-top: 0.06rem;
+	margin-bottom: 0.15rem;
+	background: url(icon/hotxiao.png) no-repeat;
+	background-size: 0.62rem 0.21rem;
+	background-position: center;
+}
+.box{
+	float: left;
+	background: #fff;
+	margin-top:0.2rem;
+}
+.shop{
+	float: left;
+	width: 7.02rem;
+	margin:0 0.24rem;
+}
+.shop_title{
+	float: left;
+	margin: 0.24rem 0;
+	padding-left: 0.14rem;
+	width: 4.88rem;
+}
+.shop img{
+	float: left;
+	margin: 0.24rem 0;
+	width: 0.76rem;
+	height: 0.76rem;
+	border-radius: 10rem;
+}
+.shop_name{
+	font-size:0.28rem;
+	line-height: 0.44rem;
+	font-family: "PingFang_Bold";
+	overflow: hidden;
+	white-space:nowrap;
+	text-overflow: ellipsis;
+}
+.shop_text:before{
+	content: "";
+    display: inline-block;
+    vertical-align: middle;
+    margin-top: -1px;
+    width: 0.24rem;
+    height: 0.24rem;
+    background-image: url(icon/hot.png);
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-size: 100%
+}
+.shop_text{
+	font-size: 0.22rem;
+	line-height: 0.32rem;
+	font-family: "PingFang_Regular";
+	color: #999;
+	overflow: hidden;
+	white-space:nowrap;
+	text-overflow: ellipsis;
+}
+.shop_in{
+	font-family: "PingFang_Bold";
+	float: right;
+	width: 0.9rem;
+	height: 0.5rem;
+	line-height: 0.5rem;
+	font-size: 0.24rem;
+	color: #fa4644;
+	text-align: center;
+	border: solid 1px #fa4644;
+	border-radius: 0.44rem;
+	margin-top: 0.3rem;
+}
+.shop_over{
+	width: 7.26rem;
+	margin-left: 0.24rem;
+	overflow: scroll;
+	font-family: "PingFang_Medium";
+}
+.shop_pro{
+	float: left;
+	width: 17.6rem;
+	padding-right:0.14rem;
+/*	background-color: #f2f6fa;*/
+}
+.shop_pro li{
+	float: left;
+	width: 2.1rem;
+	margin-right: 0.1rem
+}
+.shop_pro .product{
+	width: 2.1rem;
+	height: 2.1rem;
+}
+.shop_pro .product img{
+	width: inherit;
+	height: inherit;
+}
+.shop_pro .product_text{
+	width: 1.9rem;
+	margin:0 0.1rem;
+	text-align: center;
+	font-size: 0.24rem;
+	line-height: 0.7rem;
+	overflow: hidden;
+	white-space:nowrap;
+	text-overflow: ellipsis;
+}
+.shop_pro li span{
+	float: left;
+	width: 1.6rem;
+	margin:0 0.1rem;
+	height: 0.22rem;
+	line-height: 0.22rem;
+	font-size: 0.22rem;
+	color: #f63d47;
+	text-align: center;
+	margin-bottom: 0.18rem;
+}
+.shop_bottom:before{
+	content: "";
+    display: inline-block;
+    vertical-align: middle;
+    margin-top: -2px;
+    width: 0.24rem;
+    height: 0.24rem;
+    background-image: url(icon/loc1.png);
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-size: .2rem .24rem
+}
+.shop_bottom{
+	padding-left: 0.24rem;
+	height: 0.8rem;
+	line-height: 0.8rem;
+	font-size: 0.24rem;
+	color: #47cdf1;
+	border-top: 1px solid #f7f7f7;
+}
+.box2 .shop_pro{
+	background: url(img/colorbg.jpg);
+	background-position: 0 0;
+	background-size: auto 100%; 
+}
+.box2 .shop_pro li{
+	margin-bottom: 0.2rem;
+	background: #fff;
+}
+.box2 .shop_pro li span{
+	padding-top: 0.09rem;
+	margin-bottom: 0.23rem;
+}
+.box2 .shop_pro li span i{
+	color: #b3b3b3;
+	font-style: normal;
+	text-decoration:line-through;
+}
+.Tab{
+	width: 7.5rem;
+	height: 0.98rem;
+	background:url(icon/TAB.jpg);
+	background-size: 100%;
+	background-color: #fff;
+	position: fixed;
+	bottom: 0;
+	box-shadow: 0 -2px 10px rgba(51,51,51,.1)
+}
