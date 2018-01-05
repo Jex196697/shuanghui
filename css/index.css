@@ -67,24 +67,16 @@ p{
 	line-height: 1.1rem;
 	font-size: 0.28rem;
 	color: #f84145;
-	padding-left: 0.29rem;
 	font-family: "PingFang_Bold";
 	color: #f84145;
-	background: url(../icon/loc.png) no-repeat ;
-	background-size: 0.21rem 0.26rem;
-	background-position: 0 0.41rem;
 }
 .M_nearby .location2{
 	float: right;
 	height: 1.1rem;
 	line-height: 1.1rem;
 	font-size: 0.28rem;
-	padding-right: 0.24rem;
 	font-family: "PingFang_Bold";
 	color: #b8c2cc;
-	background: url(../icon/jin2.png) no-repeat;
-	background-size: 0.1rem 0.16rem;
-	background-position: right 0.47rem;
 }
 .M_nearby .location p,.M_nearby .location2 p{
 	max-width:4rem;
@@ -93,6 +85,31 @@ p{
 	white-space:nowrap;
 	text-overflow: ellipsis;
 
+}
+.M_nearby .location p:before{
+	content: "";
+    display: inline-block;
+    vertical-align: middle;
+    margin-top: -2.5px;
+    width: 0.21rem;
+    height: 0.26rem;
+    margin-right: 0.1rem;
+    background-image: url(../icon/loc.png);
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-size: 0.21rem 0.26rem;
+}
+.location2 p:after{
+	content: "";
+    display: inline-block;
+    vertical-align: middle;
+    margin-top: -2px;
+    width: 0.24rem;
+    height: 0.24rem;
+    background-image: url(../icon/jin2.png);
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-size: 0.1rem 0.16rem;
 }
 
 /*优惠券*/
@@ -317,18 +334,18 @@ p{
 	text-align: center;
 	margin-bottom: 0.18rem;
 }
-/* .shop_bottom:before{
+.shop_bottom:before{
 	content: "";
     display: inline-block;
     vertical-align: middle;
     margin-top: -2px;
-    width: 0.18rem;
-    height: 0.22rem;
+    width: 0.22rem;
+    height: 0.24rem;
     background-image: url(../icon/loc1.png);
     background-repeat: no-repeat;
     background-position: 50%;
-    background-size: .18rem .22rem
-} */
+    background-size: .2rem .24rem
+}
 .shop_bottom{
 	padding-left: 0.24rem;
 	height: 0.7rem;
