@@ -145,6 +145,13 @@ p{
 	width: inherit;
 	height: inherit;
 }
+#ms01:before{
+	content: "00:00:00";
+	color: #f53b47;
+    font-size: 0.20rem;
+    margin-right: 0.15rem;
+    font-weight: 600;
+}
 .xiaoliang{
 	float: right;
 	width: 27%;
@@ -229,7 +236,6 @@ p{
 	width: 0.76rem;
 	height: 0.76rem;
 	border-radius: 10rem;
-	box-shadow: 0 0 0.04rem rgba(0,0,0,.2)
 }
 .shop_name{
 	font-size:0.28rem;
@@ -243,7 +249,7 @@ p{
 	content: "";
     display: inline-block;
     vertical-align: middle;
-    margin-top: -1px;
+    margin-top: -3px;
     width: 0.24rem;
     height: 0.24rem;
     background-image: url(../icon/hot.png);
@@ -261,14 +267,19 @@ p{
 }
 .shop_in{
 	float: right;
-	width: 0.9rem;
-	height: 0.5rem;
-	line-height: 0.5rem;
+	width: 0.8rem;
+	height: 0.44rem;
+	line-height: 0.44rem;
 	font-size: 0.24rem;
+	font-weight: bold;
 	color: #fa4644;
 	text-align: center;
+	text-indent: 2px;
 	border: solid 1px #fa4644;
-	border-radius: 0.44rem;
+	border-top-left-radius: 0.5rem;
+	border-top-right-radius: 0.5rem;
+	border-bottom-left-radius: 0.5rem;
+	border-bottom-right-radius: 0rem;
 	margin-top: 0.3rem;
 }
 .shop_over{
