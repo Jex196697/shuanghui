@@ -286,6 +286,7 @@ p{
 	width: 7.26rem;
 	margin-left: 0.24rem;
 	overflow: scroll;
+	-webkit-overflow-scrolling: touch;
 }
 .shop_pro{
 	float: left;
