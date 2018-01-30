@@ -342,7 +342,11 @@ p{
     background-size: .2rem .24rem
 }*/
 .shop_bottom{
-	padding-left: 0.24rem;
+	width: 7.02rem;
+    	padding: 0 0.24rem;
+    	overflow: hidden;
+    	white-space: nowrap;
+    	text-overflow: ellipsis;
 	height: 0.8rem;
 	line-height: 0.8rem;
 	font-size: 0.24rem;
